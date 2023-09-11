@@ -3,6 +3,7 @@
 abstract class Element {
     const TAG_DIV = 'div';
     const TAG_LI = 'li';
+    const TAG_SPAN = 'span';
 
     protected function _classByXpath(string $class, string $element_type = '*') : string
     {
@@ -16,9 +17,8 @@ abstract class Element {
             throw new Exception('FAILED TO SCRAPE');
         }
 
-        return $nodes[0]->nodeValue;
-        //$trimmed = trim($text);
-        //return utf8_encode($trimmed);
+        $text = $nodes[0]->nodeValue;
+        return trim($text);
     }
 
     abstract protected function _getXpathSelector(): string;
