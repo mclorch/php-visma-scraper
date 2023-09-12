@@ -1,0 +1,16 @@
+{
+    "name": "mlorch/php-visma-scraper",
+    "description": "visma scraper",
+    "authors": [
+        {
+            "name": "Malin Lorch",
+            "email": "mlorch@liquidweb.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Scraper\\": "src/Scraper/"
+        }
+    }
+}

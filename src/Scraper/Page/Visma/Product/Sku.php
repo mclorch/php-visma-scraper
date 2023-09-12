@@ -1,6 +1,8 @@
 <?php
 
-require_once(__DIR__ . '/../Element.php');
+namespace Scraper\Page\Visma\Product;
+
+use Scraper\Element;
 
 class Sku extends Element {
 
